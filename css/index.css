@@ -14,7 +14,9 @@
 /******* 전역설정 ********/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
-html,body{font-family: 'Lato', sans-serif; font-size: 16px;}
+
+
+html,body{font-family: 'Lato', sans-serif; font-size: 16px; height: 10000px;}
 section{color: #777;}/* padding: 5em 1em 2.5em 1em;*/
 /* section:not(.main-wrapper){padding: 5em 1em 2.5em 1em;} */
 section.wrapper{padding: 5em 1em;}
@@ -110,7 +112,15 @@ background-color: rgba(255, 255, 255, 0.3);}
 
 .contact-wrapper .bg-wrap > div{height: 100%; display: flex;  color:#fff; font-size: 1.6em; justify-content: center; align-items: center; letter-spacing: 0.325em; background-color: rgba(255, 255, 255, 0.3);}
 
-.contact-wrapper > .title-wrap {padding: 5em 0 2.5em 0;}	
+.contact-wrapper > .title-wrap {padding: 5em 0 2.5em 0;}
+
+.contact-wrapper > .contact-wrap {display: flex;}
+.contact-wrapper > .contact-wrap > .img-wrap {width: 30%;}
+.contact-wrapper > .contact-wrap > .form-wrap {width: 70%; padding-left: 3%;}
+.contact-wrapper > .contact-wrap .info-wrap {margin-bottom: 1em;}
+.contact-wrapper > .contact-wrap .info-wrap > li {font-size: 1.25em; padding: .5em 0;}
+.contact-wrapper > .contact-wrap .info-wrap > li > i.fa {width: 2em;}
+.contact-wrapper > .contact-wrap .desc {margin-bottom: 1em;}
 
 /******* footer-wrapper   ******/
 
