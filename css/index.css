@@ -114,7 +114,7 @@ background-color: rgba(255, 255, 255, 0.3);}
 
 .contact-wrapper > .title-wrap {padding: 5em 0 2.5em 0;}
 
-.contact-wrapper > .contact-wrap {display: flex;}
+.contact-wrapper > .contact-wrap {display: flex; flex-wrap: wrap;}
 .contact-wrapper > .contact-wrap > .img-wrap {width: 30%;}
 .contact-wrapper > .contact-wrap > .img-wrap > img {border-radius: .25em;}
 .contact-wrapper > .contact-wrap > .form-wrap {width: 70%; padding-left: 3%;}
@@ -132,6 +132,15 @@ background-color: rgba(255, 255, 255, 0.3);}
 .contact-wrapper .form-wrap button:hover {background-color: #ccc; color: #000;}
 
 /******* footer-wrapper   ******/
+.footer-wrapper {background-color: rgba(0, 0, 0, .6); color: #fff; padding: 5em 0; text-align: center; display: flex; flex-direction: column; align-items: center;}
+.footer-wrapper:hover {background-color: rgba(0, 0, 0, 1);}
+.footer-wrapper .bt-up {background-color: #ddd; color: #777; padding: .75em 1em;}
+.footer-wrapper .bt-up:hover {background-color: #aaa;}
+.footer-wrapper:hover .bt-up {color: #111;}
+.footer-wrapper .sns-wrap {margin: 1.25em 0; font-size: 1.5em;}
+.footer-wrapper .sns-wrap a {margin: 0 .125em;}
+
+
 
 /******* 반응형 responsive ********/
 
@@ -154,6 +163,11 @@ background-color: rgba(255, 255, 255, 0.3);}
 	  .about-wrapper .content-wrapper .content{width: 100%;}
 		.pf-wrapper .prj-wrap .prj {width: 50%;}
 		.pf-wrapper .work-wrapper .work-wrap .work{width: 48%}
+
+		.contact-wrapper > .contact-wrap > .img-wrap {width: 100%;}
+		.contact-wrapper > .contact-wrap > .form-wrap {width: 100%; padding-left: 0; padding-top: 1em;}
+		.contact-wrapper .form-wrap input[name="name"] {width: 100%;}
+		.contact-wrapper .form-wrap input[name="email"] {width: 100%;}
 
 	}
 	@media all and (max-width:576px) {
