@@ -116,11 +116,20 @@ background-color: rgba(255, 255, 255, 0.3);}
 
 .contact-wrapper > .contact-wrap {display: flex;}
 .contact-wrapper > .contact-wrap > .img-wrap {width: 30%;}
+.contact-wrapper > .contact-wrap > .img-wrap > img {border-radius: .25em;}
 .contact-wrapper > .contact-wrap > .form-wrap {width: 70%; padding-left: 3%;}
 .contact-wrapper > .contact-wrap .info-wrap {margin-bottom: 1em;}
 .contact-wrapper > .contact-wrap .info-wrap > li {font-size: 1.25em; padding: .5em 0;}
 .contact-wrapper > .contact-wrap .info-wrap > li > i.fa {width: 2em;}
 .contact-wrapper > .contact-wrap .desc {margin-bottom: 1em;}
+.contact-wrapper .form-wrap form {display: flex; justify-content: space-between; flex-wrap: wrap;}
+.contact-wrapper .form-wrap input {margin-bottom: .5em; padding: .75em; outline: none; border-radius: .25em; border: 1px solid #999; height: 46px;}
+.contact-wrapper .form-wrap input:focus {border: 2px solid #222;}
+.contact-wrapper .form-wrap input[name="name"] {width: 49%;}
+.contact-wrapper .form-wrap input[name="email"] {width: 49%;}
+.contact-wrapper .form-wrap input[name="message"] {width: 100%;}
+.contact-wrapper .form-wrap button {padding: .75em 1.25em; background-color: #000; color: #fff; margin-left: auto; cursor: pointer;}
+.contact-wrapper .form-wrap button:hover {background-color: #ccc; color: #000;}
 
 /******* footer-wrapper   ******/
 
