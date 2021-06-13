@@ -16,7 +16,7 @@
 
 
 
-html,body{font-family: 'Lato', sans-serif; font-size: 16px; height: 10000px;}
+html,body{font-family: 'Lato', sans-serif; font-size: 16px;}
 section{color: #777;}/* padding: 5em 1em 2.5em 1em;*/
 /* section:not(.main-wrapper){padding: 5em 1em 2.5em 1em;} */
 section.wrapper{padding: 5em 1em;}
@@ -31,10 +31,10 @@ section > .bg-wrap{height: 40vh;  background-size: cover; background-position: c
 .header-wrapper {position: fixed; z-index: 99; width: 100%; display: flex; justify-content: space-between;  color: #777;} /* 앱솔루트와 픽시드는 블록속성이 사라짐. */
 .active {background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.5); color: black;}
 
-.header-wrapper .navi-wrap{display: flex;}
-.header-wrapper .navi-wrap a{display: inline-block;}
-.header-wrapper .navi-wrap .navi{font-size: 1em; padding: 1em 1.5em;}
-.header-wrapper .navi-wrap .navi:hover{color: #111; background-color: #777;}
+.header-wrapper .navi-wrap {display: flex;}
+.header-wrapper .navi-wrap a {display: inline-block;}
+.header-wrapper .navi-wrap .navi {font-size: 1em; padding: 1em 1.5em;}
+.header-wrapper .navi-wrap .navi:hover {color: #111; background-color: #bbb;}
 .header-wrapper .search-wrap a.navi-search{padding: 16px 24px; color: #777;}
 .header-wrapper .search-wrap a.navi-bars{padding: 16px 24px; color: #777; display: none;}
 .header-wrapper .search-wrap a .navi-search:hover{color: #fff; background-color: #ff2600;}
@@ -162,6 +162,7 @@ background-color: rgba(255, 255, 255, 0.3);}
 
 	}
 	@media all and (max-width:768px) {
+		.header-wrapper .navi-wrap li:not(:first-child) {display: none;}
 		.about-wrapper .content-wrapper .img-wrap{width: 100%;}
 	  .about-wrapper .content-wrapper .content{width: 100%;}
 		.pf-wrapper .prj-wrap .prj {width: 50%;}
